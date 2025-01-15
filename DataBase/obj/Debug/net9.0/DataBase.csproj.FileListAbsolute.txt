@@ -1,0 +1,11 @@
+C:\Users\disrct\Desktop\SistemaEscolar\DataBase\bin\Debug\net9.0\DataBase.deps.json
+C:\Users\disrct\Desktop\SistemaEscolar\DataBase\bin\Debug\net9.0\DataBase.dll
+C:\Users\disrct\Desktop\SistemaEscolar\DataBase\bin\Debug\net9.0\DataBase.pdb
+C:\Users\disrct\Desktop\SistemaEscolar\DataBase\obj\Debug\net9.0\DataBase.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\disrct\Desktop\SistemaEscolar\DataBase\obj\Debug\net9.0\DataBase.AssemblyInfoInputs.cache
+C:\Users\disrct\Desktop\SistemaEscolar\DataBase\obj\Debug\net9.0\DataBase.AssemblyInfo.cs
+C:\Users\disrct\Desktop\SistemaEscolar\DataBase\obj\Debug\net9.0\DataBase.csproj.CoreCompileInputs.cache
+C:\Users\disrct\Desktop\SistemaEscolar\DataBase\obj\Debug\net9.0\DataBase.dll
+C:\Users\disrct\Desktop\SistemaEscolar\DataBase\obj\Debug\net9.0\refint\DataBase.dll
+C:\Users\disrct\Desktop\SistemaEscolar\DataBase\obj\Debug\net9.0\DataBase.pdb
+C:\Users\disrct\Desktop\SistemaEscolar\DataBase\obj\Debug\net9.0\ref\DataBase.dll

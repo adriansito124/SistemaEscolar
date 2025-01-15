@@ -1,0 +1,15 @@
+C:\Users\disrct\Desktop\SistemaEscolar\Model\obj\Debug\net9.0\Model.csproj.AssemblyReference.cache
+C:\Users\disrct\Desktop\SistemaEscolar\Model\obj\Debug\net9.0\Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\disrct\Desktop\SistemaEscolar\Model\obj\Debug\net9.0\Model.AssemblyInfoInputs.cache
+C:\Users\disrct\Desktop\SistemaEscolar\Model\obj\Debug\net9.0\Model.AssemblyInfo.cs
+C:\Users\disrct\Desktop\SistemaEscolar\Model\obj\Debug\net9.0\Model.csproj.CoreCompileInputs.cache
+C:\Users\disrct\Desktop\SistemaEscolar\Model\bin\Debug\net9.0\Model.deps.json
+C:\Users\disrct\Desktop\SistemaEscolar\Model\bin\Debug\net9.0\Model.dll
+C:\Users\disrct\Desktop\SistemaEscolar\Model\bin\Debug\net9.0\Model.pdb
+C:\Users\disrct\Desktop\SistemaEscolar\Model\bin\Debug\net9.0\DataBase.dll
+C:\Users\disrct\Desktop\SistemaEscolar\Model\bin\Debug\net9.0\DataBase.pdb
+C:\Users\disrct\Desktop\SistemaEscolar\Model\obj\Debug\net9.0\Model.csproj.Up2Date
+C:\Users\disrct\Desktop\SistemaEscolar\Model\obj\Debug\net9.0\Model.dll
+C:\Users\disrct\Desktop\SistemaEscolar\Model\obj\Debug\net9.0\refint\Model.dll
+C:\Users\disrct\Desktop\SistemaEscolar\Model\obj\Debug\net9.0\Model.pdb
+C:\Users\disrct\Desktop\SistemaEscolar\Model\obj\Debug\net9.0\ref\Model.dll
