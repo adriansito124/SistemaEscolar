@@ -9,3 +9,4 @@ C:\Users\disrct\Desktop\SistemaEscolar\DataBase\obj\Debug\net9.0\DataBase.dll
 C:\Users\disrct\Desktop\SistemaEscolar\DataBase\obj\Debug\net9.0\refint\DataBase.dll
 C:\Users\disrct\Desktop\SistemaEscolar\DataBase\obj\Debug\net9.0\DataBase.pdb
 C:\Users\disrct\Desktop\SistemaEscolar\DataBase\obj\Debug\net9.0\ref\DataBase.dll
+C:\Users\disrct\Desktop\SistemaEscolar\DataBase\obj\Debug\net9.0\DataBase.sourcelink.json

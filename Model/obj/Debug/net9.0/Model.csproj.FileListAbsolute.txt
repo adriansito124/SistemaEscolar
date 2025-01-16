@@ -13,3 +13,4 @@ C:\Users\disrct\Desktop\SistemaEscolar\Model\obj\Debug\net9.0\Model.dll
 C:\Users\disrct\Desktop\SistemaEscolar\Model\obj\Debug\net9.0\refint\Model.dll
 C:\Users\disrct\Desktop\SistemaEscolar\Model\obj\Debug\net9.0\Model.pdb
 C:\Users\disrct\Desktop\SistemaEscolar\Model\obj\Debug\net9.0\ref\Model.dll
+C:\Users\disrct\Desktop\SistemaEscolar\Model\obj\Debug\net9.0\Model.sourcelink.json

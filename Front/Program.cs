@@ -9,10 +9,10 @@ IRepository<Professor> profRepo = null;
 IRepository<Disciplina> dRepo = null;
 IRepository<Turma> turmaRepo = null;
 
-alunoRepo = new AlunoFakeRepository();
-profRepo = new ProfessorFakeRepository();
-dRepo = new DisciplinaFakeRepository();
-turmaRepo = new TurmaFakeRepository();
+alunoRepo = new AlunoFileRepository();
+profRepo = new ProfessorFileRepository();
+dRepo = new DisciplinaFileRepository();
+turmaRepo = new TurmaFileRepository();
 
 while (true)
 {
@@ -78,7 +78,8 @@ while (true)
                 {
                     WriteLine("professor não encontrado!");
                 }
-                else{
+                else
+                {
                     dRepo.Add(disciplina);
                 }
                 break;
@@ -90,37 +91,66 @@ while (true)
                 }
                 break;
             case 8:
-            Clear();
+                Clear();
                 var alus = alunoRepo.All;
                 var disciplinas = dRepo.All;
+                var turmaz = turmaRepo.All;
                 Turma turma = new();
                 WriteLine("Insira o nome da turma: ");
                 turma.Nome = ReadLine();
-                WriteLine("Insira a disciplina: ");
-                string nomedis = ReadLine();
-                foreach (var item in disciplinas)
+                WriteLine("Insira quantidade de disciplinas: ");
+                int qtdDis = int.Parse(ReadLine());
+                for (int i = 0; i < qtdDis; i++)
                 {
-                    if (item.Nome == nomedis)
+                    WriteLine("Insira a disciplina: ");
+                    string nomedis = ReadLine();
+                    foreach (var item in disciplinas)
                     {
-                        turma.disciplinaID = turma.disciplinaID + $"{item.Nome},";
-                        turma.professorID = turma.disciplinaID + $"{item.professor.Nome}";
+                        if (item.Nome == nomedis)
+                        {
+                            turma.IDDisciplina.Add(item.Nome);
+                            turma.IDProfessor.Add(item.professor.Nome);
+                        }
                     }
                 }
-                WriteLine("Insira o aluno: ");
-                string nomeal = ReadLine();
-                foreach (var item in alus)
+                WriteLine("Insira quantidade de alunos: ");
+                int qtdAlunos = int.Parse(ReadLine());
+                for (int i = 0; i < qtdAlunos; i++)
                 {
-                    if (item.Nome == nomeal)
+                    WriteLine("Insira o aluno: ");
+                    string nomeal = ReadLine();
+                    foreach (var item in alus)
                     {
-                        turma.alunosID = turma.alunosID + $"{item.Nome},";
+                        if (item.Nome == nomeal)
+                        {
+                            turma.IDAluno.Add(item.Nome);
+                        }
                     }
                 }
+                turmaRepo.Add(turma);
                 break;
             case 9:
                 var turmas = turmaRepo.All;
+                int ind = 0;
                 foreach (var t in turmas)
                 {
-                    WriteLine($"{t.Nome} - {t.IDProfessor[0]} - {t.IDDisciplina[0]} - {t.IDAluno[0]}");
+                    WriteLine($"Turma: {t.Nome} ");
+                    WriteLine($"Professor(es): ");
+                    for (int i = 0; i < turmas[ind].IDDisciplina.Count; i++)
+                    {
+                        WriteLine($"-> {t.IDProfessor[i]} ");
+                    }
+                    WriteLine($"Disciplina(s): ");
+                    for (int i = 0; i < turmas[ind].IDDisciplina.Count; i++)
+                    {
+                        WriteLine($"-> {t.IDDisciplina[i]} ");
+                    }
+                    WriteLine($"Aluno(s): ");
+                    for (int i = 0; i < turmas[ind].IDAluno.Count; i++)
+                    {
+                         WriteLine($"-> {t.IDAluno[i]} ");
+                    }
+                    ind = ind+1;
                 }
                 break;
             default:

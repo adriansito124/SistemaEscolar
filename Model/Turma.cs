@@ -3,21 +3,14 @@ using DataBase;
 namespace Model;
 
 public class Turma : DataBaseObject
-{  
+{
     public string Nome { get; set; }
 
-    public List<string> IDProfessor = new List<string>(){};
+    public List<string> IDProfessor = new List<string>() { };
 
-    public string professorID { get; set; }
+    public List<string> IDDisciplina = new List<string>() { };
 
-    public List<string> IDDisciplina = new List<string>(){};
-
-    public string disciplinaID { get; set; }
-
-    public List<string> IDAluno = new List<string>(){};
-
-    public string alunosID { get; set; }
-
+    public List<string> IDAluno = new List<string>() { };
 
 
     protected override void LoadFrom(string[] data)
@@ -29,10 +22,11 @@ public class Turma : DataBaseObject
 
     }
 
-    protected override string[] SaveTo() => [
+    protected override string[] SaveTo() => new string[]
+    {
         this.Nome,
-        this.professorID,
-        this.disciplinaID,
-        this.alunosID
-    ];
+        string.Join(",", this.IDProfessor),
+        string.Join(",", this.IDDisciplina),
+        string.Join(",", this.IDAluno)
+    };
 }
