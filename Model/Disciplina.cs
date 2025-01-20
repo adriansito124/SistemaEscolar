@@ -1,3 +1,4 @@
+using System.Data;
 using DataBase;
 
 namespace Model;
@@ -5,7 +6,7 @@ namespace Model;
 public class Disciplina : DataBaseObject
 {
     public string Nome { get; set; }
-    public Professor professor;   
+    public Professor professor = new Professor();   
     protected override void LoadFrom(string[] data)
     {
         this.Nome = data[0];
@@ -17,4 +18,14 @@ public class Disciplina : DataBaseObject
         this.Nome,
         this.professor.Nome,
     ];
+
+    protected override void LoadFromSqlRow(DataRow data)
+    {
+        throw new NotImplementedException();
+    }
+
+    protected override string SaveToSql()
+    {
+        throw new NotImplementedException();
+    }
 }

@@ -1,3 +1,4 @@
+using System.Data;
 using DataBase;
 
 namespace Model;
@@ -29,4 +30,14 @@ public class Turma : DataBaseObject
         string.Join(",", this.IDDisciplina),
         string.Join(",", this.IDAluno)
     };
+
+    protected override void LoadFromSqlRow(DataRow data)
+    {
+        throw new NotImplementedException();
+    }
+
+    protected override string SaveToSql()
+    {
+        throw new NotImplementedException();
+    }
 }

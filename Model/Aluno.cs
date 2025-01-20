@@ -1,3 +1,4 @@
+using System.Data;
 using DataBase;
 
 namespace Model;
@@ -14,9 +15,19 @@ public class Aluno : DataBaseObject
         this.Idade = int.Parse(data[1]);
     }
 
+    protected override void LoadFromSqlRow(DataRow data)
+    {
+        this.Nome = data[0].ToString();
+        this.Idade = int.Parse(data[1].ToString());
+    }
+
     protected override string[] SaveTo() => new string[]
     {
         this.Nome,
         this.Idade.ToString()    
     };
+
+    protected override string SaveToSql()
+        => $"INSERT INTO [Alunos] VALUES ('{this.Nome}', {this.Idade})";
+    
 }

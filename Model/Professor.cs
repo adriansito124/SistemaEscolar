@@ -1,3 +1,4 @@
+using System.Data;
 using DataBase;
 
 namespace Model;
@@ -12,8 +13,18 @@ public class Professor : DataBaseObject
         this.Formacao = data[1];
     }
 
+    protected override void LoadFromSqlRow(DataRow data)
+    {
+        throw new NotImplementedException();
+    }
+
     protected override string[] SaveTo() => [
         this.Nome,
         this.Formacao,
     ];
+
+    protected override string SaveToSql()
+    {
+        throw new NotImplementedException();
+    }
 }
